@@ -1,0 +1,174 @@
+
+
+ 
+
+<div class="container">
+
+  <!-- <div class="card-container"> -->
+
+    <ng-container *ngIf="flights.length === 0">
+
+       <!-- <div class="card">  -->
+
+        <!-- <div class="card-body">  -->
+
+          <p class="warning-message">
+
+            <strong>No flights available from {{ criteria.iata_from }} to {{ criteria.iata_to }} on {{ criteria.date }} for {{ criteria.classType }} class</strong>
+
+          </p>
+
+        <!-- </div>  -->
+
+      <!-- </div>  -->
+
+     
+
+    </ng-container>
+
+   
+
+   
+
+   
+
+   
+
+   
+
+ 
+
+    <!-- <div class="col-md-4" >
+
+      <div class="form-group">
+
+        <span class="form-label">From</span>
+
+        <input class="form-control custom-input scrollable-input" style="font-weight: bold;" type="text" name="fromAirport" [(ngModel)]="airportDetailsFrom.name" [disabled]="true">
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4"  >
+
+      <div class="form-group">
+
+        <span class="form-label">To</span>
+
+        <input class="form-control custom-input scrollable-input" type="text" style="font-weight: bold;" name="toAirport" [(ngModel)]="airportDetailsTo.name" [disabled]="true">
+
+      </div>
+
+    </div> -->
+
+    <!-- <div class="col-md-4" style="margin-left: 20px">
+
+      <div class="form-group">
+
+        <span class="form-label">From</span>
+
+        <input class="form-control custom-input" style="font-weight: bold;" type="text" name="fromAirport" [(ngModel)]="airportDetailsFrom.name" [disabled]="true">
+
+      </div>
+
+    </div>
+
+   
+
+ 
+
+    <div class="col-md-4" style="margin-right: 20">
+
+      <div class="form-group">
+
+        <span class="form-label">To</span>
+
+        <input class="form-control custom-input" style="font-weight: bold;" type="text" name="toAirport" [(ngModel)]="airportDetailsTo.name" [disabled]="true">
+
+      </div>
+
+    </div> -->
+
+   
+
+   
+
+    <!-- From:{{airportDetailsFrom.name}}
+
+    To:{{airportDetailsTo.name}} -->
+
+   
+
+ 
+
+    <!-- <div class="flight-card" *ngFor="let flight of flights"> -->
+
+      <!-- <div class="flight-card-content">
+
+        <div class="flight-details">
+
+          <h3><strong>Flight Number: {{  airlineDetails?.id }} </strong></h3>
+
+          <p><strong>Departure:</strong> {{ airportDetailsFrom.name}}</p>
+
+          <p><strong>Destination:</strong> {{ airportDetailsTo.name }}</p>
+
+          <p><strong>Airline Code:</strong> {{ flight.airLineIata }}</p>
+
+          <p><strong>Airline Name:</strong> {{ airlineDetails?.name }}</p> -->
+
+         
+
+        <!-- </div> -->
+
+        <!-- {{criteria.iata_from}} -->
+
+        <!-- {{criteria.iata_to} -->
+
+ 
+
+        <!-- <div class="airline-logo">
+
+          <img *ngIf="airlineDetails?.logo" [src]="airlineDetails.logo" alt="{{ airlineDetails?.name }} Logo" width="60" height="50">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->
+
+ 
+
+<div class="container" >
+  <h2 style="color: white;">Flight List</h2>
+  <table class="table">
+    <thead style="color: white;">
+      <tr>
+        <th>Flight Number</th>
+        <th>Departure</th>
+        <th>Destination</th>
+        <th>Airline Code</th>
+        <th>Airline Name</th>
+        <th>Logo</th>
+      </tr>
+    </thead>
+    <tbody style="color: white;" >
+      <tr *ngFor="let flight of flights">
+        <td>{{  airlineDetails?.id }}</td>
+        <td>{{ airportDetailsFrom.name }}</td>
+        <td>{{ airportDetailsTo.name }}</td>
+        <td>{{ flight.airLineIata }}</td>
+        <td>{{ airlineDetails?.name }}</td>
+        <td>
+          <img *ngIf="airlineDetails?.logo" [src]="airlineDetails.logo" alt="{{ airlineDetails?.name }} Logo" width="60" height="50">
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div> 

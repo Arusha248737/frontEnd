@@ -1,0 +1,1747 @@
+<style>
+
+ 
+
+    .section {
+
+ 
+
+ position: relative;
+
+ 
+
+ height: 100vh;
+
+ 
+
+ }
+ .section .section-center {
+
+ 
+
+ position: absolute;
+
+ 
+
+ top: 40%;
+
+ 
+
+ left: 0;
+
+ 
+
+ right: 0;
+
+ 
+
+ -webkit-transform: translateY(-50%);
+
+ 
+
+ transform: translateY(-50%);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ #booking {
+
+ 
+
+ font-family: 'PT Sans', sans-serif;
+
+ 
+
+ background-image: url('https://plus.unsplash.com/premium_photo-1679830513870-12cc6c0053a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80%27');
+
+ 
+
+ background-size: cover;
+
+ 
+
+ background-position: center;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form {
+
+ 
+
+ background: rgba(245, 245, 245, 0.4);
+
+ 
+
+ padding: 40px;
+
+ 
+
+ border-radius: 6px;
+
+ 
+
+ width: 60%;
+
+ 
+
+ margin: 0 auto;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-group {
+
+ 
+
+ position: relative;
+
+ 
+
+ margin-bottom: 20px;
+
+ 
+
+ 
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-control {
+
+ 
+
+ background-color: #fff;
+
+ 
+
+ height: 50px;
+
+ 
+
+ color: #191a1e;
+
+ 
+
+ border: none;
+
+ 
+
+ font-size: 16px;
+
+ 
+
+ font-weight: 400;
+
+ 
+
+ -webkit-box-shadow: none;
+
+ 
+
+ box-shadow: none;
+
+ 
+
+ border-radius: 40px;
+
+ 
+
+ padding: 0px 25px;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-control::-webkit-input-placeholder {
+
+ 
+
+ color: rgba(82, 82, 84, 0.4);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-control:-ms-input-placeholder {
+
+ 
+
+ color: rgba(82, 82, 84, 0.4);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-control::placeholder {
+
+ 
+
+ color: rgba(82, 82, 84, 0.4);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form input[type="date"].form-control:invalid {
+
+ 
+
+ color: rgba(82, 82, 84, 0.4);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form select.form-control {
+
+ 
+
+ -webkit-appearance: none;
+
+ 
+
+ -moz-appearance: none;
+
+ 
+
+ appearance: none;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form select.form-control+.select-arrow {
+
+ 
+
+ position: absolute;
+
+ 
+
+ right: 10px;
+
+ 
+
+ bottom: 6px;
+
+ 
+
+ width: 32px;
+
+ 
+
+ line-height: 32px;
+
+ 
+
+ height: 32px;
+
+ 
+
+ text-align: center;
+
+ 
+
+ pointer-events: none;
+
+ 
+
+ color: rgba(0, 0, 0, 0.3);
+
+ 
+
+ font-size: 14px;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form select.form-control+.select-arrow:after {
+
+ 
+
+ content: '\279C';
+
+ 
+
+ display: block;
+
+ 
+
+ -webkit-transform: rotate(90deg);
+
+ 
+
+ transform: rotate(90deg);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-label {
+
+ 
+
+ display: block;
+
+ 
+
+ margin-left: 20px;
+
+ 
+
+ 
+
+ 
+
+ margin-bottom: 5px;
+
+ 
+
+ font-weight: 400;
+
+ 
+
+ text-transform: uppercase;
+
+ 
+
+ line-height: 24px;
+
+ 
+
+ height: 24px;
+
+ 
+
+ font-size: 12px;
+
+ 
+
+ color: black;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox input {
+
+ 
+
+ position: absolute !important;
+
+ 
+
+ margin-left: -9999px !important;
+
+ 
+
+ visibility: hidden !important;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox label {
+
+ 
+
+ position: relative;
+
+ 
+
+ padding-top: 4px;
+
+ 
+
+ padding-left: 30px;
+
+ 
+
+ font-weight: 400;
+
+ 
+
+ color: black;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox label+label {
+
+ 
+
+ margin-left: 15px;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox input+span {
+
+ 
+
+ position: absolute;
+
+ 
+
+ left: 2px;
+
+ 
+
+ top: 4px;
+
+ 
+
+ width: 20px;
+
+ 
+
+ height: 20px;
+
+ 
+
+ background: #fff;
+
+ 
+
+ border-radius: 50%;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox input+span:after {
+
+ 
+
+ content: '';
+
+ 
+
+ position: absolute;
+
+ 
+
+ top: 50%;
+
+ 
+
+ left: 50%;
+
+ 
+
+ width: 0px;
+
+ 
+
+ height: 0px;
+
+ 
+
+ border-radius: 50%;
+
+ 
+
+ background-color: blue;
+
+ 
+
+ -webkit-transition: 0.2s all;
+
+ 
+
+ transition: 0.2s all;
+
+ 
+
+ -webkit-transform: translate(-50%, -50%);
+
+ 
+
+ transform: translate(-50%, -50%);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox input:not(:checked)+span:after {
+
+ 
+
+ opacity: 0;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-checkbox input:checked+span:after {
+
+ 
+
+ opacity: 1;
+
+ 
+
+ width: 10px;
+
+ 
+
+ height: 10px;
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .form-btn {
+
+ 
+
+ margin-top: 27px;
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .submit-btn {
+
+ 
+
+ color: #fff;
+
+ 
+
+ background-color: #1F45FC;
+
+ 
+
+ 
+
+ 
+
+ font-weight: 400;
+
+ 
+
+ height: 50px;
+
+ 
+
+ font-size: 14px;
+
+ 
+
+ border: none;
+
+ 
+
+ width: 100%;
+
+ 
+
+ border-radius: 40px;
+
+ 
+
+ text-transform: uppercase;
+
+ 
+
+ -webkit-transition: 0.2s all;
+
+ 
+
+ transition: 0.2s all;
+
+ 
+
+ 
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ .booking-form .submit-btn:hover,
+
+ 
+
+ .booking-form .submit-btn:focus {
+
+ 
+
+ opacity: 0.9;
+
+ 
+
+ }
+
+ 
+
+ .disabled-input {
+
+ 
+
+     background-color: #f0f0f0; /* Set a background color for disabled input */
+
+ 
+
+     color: #999; /* Change the text color */
+
+ 
+
+     cursor: not-allowed; /* Change the cursor style to not-allowed */
+
+ 
+
+     border: 1px solid #ccc; /* Add a border to make it visually distinct */
+
+ 
+
+   }
+
+ 
+
+   .short-btn {
+
+    width: 150px; /* Adjust the width as needed */
+
+}
+/* Ensure the footer stays at the bottom */
+
+html, body {
+
+height: 100%;
+
+}
+
+
+
+body {
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+
+
+#wrapper {
+
+flex: 1;
+
+}
+
+
+
+footer {
+
+background-color: #3d3b3b;
+
+padding: 20px 0;
+
+position: fixed;
+
+width: 100%;
+
+bottom: 0;
+
+}
+
+
+
+footer p {
+
+margin: 0;
+
+font-size: 14px;
+
+color: rgb(252, 250, 250);
+
+}
+
+
+
+/* ... rest of the CSS code ... */
+
+
+
+
+
+ 
+
+ 
+
+ </style>
+
+ 
+
+ 
+
+ 
+
+ <div id="booking" class="section" >
+
+ 
+
+     <div class="section-center">
+
+ 
+
+         <div class="container">
+
+ 
+
+             <div class="row">
+
+ 
+
+                 <div class="booking-form">
+
+ 
+
+                     <form>
+
+ 
+
+                       
+
+ 
+
+                       
+
+ 
+
+                         <div class="form-group">
+
+ 
+
+                             <div class="form-checkbox">
+
+ 
+
+                                 <label for="roundtrip">
+
+ 
+
+                                     <input type="radio" id="roundtrip" name="flight-type" [(ngModel)]="selectedFlightType" value="roundtrip" (click)="onFlightTypeChange('roundtrip')">
+
+ 
+
+                                     <span></span>Roundtrip
+
+ 
+
+                                 </label>
+
+ 
+
+                                 <label for="one-way">
+
+ 
+
+                                     <input type="radio" id="one-way" name="flight-type" [(ngModel)]="selectedFlightType" value="one-way" (click)="onFlightTypeChange('one-way')">
+
+ 
+
+                                     <span></span>One way
+
+ 
+
+                                 </label>
+
+ 
+
+                                 <label for="multi-city">
+
+ 
+
+                                     <input type="radio" id="multi-city" name="flight-type" [(ngModel)]="selectedFlightType" value="multi-city" (click)="onFlightTypeChange('multi-city')">
+
+ 
+
+                                     <span></span>Multi-City
+
+ 
+
+                                 </label>
+
+ 
+
+                             </div>
+
+ 
+
+                         </div>
+
+ 
+
+                         <!-- flight-booking.component.html -->
+
+ 
+
+                         <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="form-group">
+
+                                    <span class="form-label">Flying from</span>
+
+                                    <input  class="form-control" type="text" name="iataFrom"  placeholder="City or airport" [(ngModel)]="criteria.iata_from" (input)="searchAirportsFrom(criteria.iata_from)"  required>
+
+                                    <div class="suggestions-container">
+
+                                    <div class="suggestions">
+
+                                        <ul>
+
+                                         
+
+                                          <li *ngFor="let suggestion of airportSuggestionsFrom" (click)="selectAirport(suggestion,'iataFrom')">
+
+                                            {{ suggestion.name }} ({{ suggestion.code }})
+
+                                          </li>
+
+                                        </ul>
+
+                                      </div>
+
+                                    </div>
+
+                                </div>
+
+                               
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="form-group">
+
+                                    <span class="form-label">Flying to</span>
+
+                                    <input class="form-control" type="text" name="iataTo"  placeholder="City or airport" [(ngModel)]="criteria.iata_to" (input)="searchAirportsTo(criteria.iata_to)" required>
+
+                                    <div class="suggestions-container">
+
+                                    <div class="suggestions">
+
+                                    <ul>
+
+                                       
+
+                                        <li *ngFor="let suggestion of airportSuggestionsTo" (click)="selectAirport(suggestion,'iataTo')">
+
+                                          {{ suggestion.name }} ({{ suggestion.code }})
+
+                                        </li>
+
+                                      </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            </div>
+
+ 
+
+                            
+
+ 
+
+                         <!-- </div> -->
+
+ 
+
+ <!-- ... (previous HTML code) ... -->
+
+ 
+
+ 
+
+ 
+
+ <!-- <div *ngIf="selectedFlightType === 'multi-city'">
+
+ 
+
+     <div class="row" *ngFor="let flight of multiCityFlights; let i = index">
+
+ 
+
+         <div class="col-md-6">
+
+ 
+
+             <div class="form-group">
+
+ 
+
+                 <span class="form-label">From</span>
+
+ 
+
+                 <input class="form-control" type="text" placeholder="City or airport" [(ngModel)]="flight.from">
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+         <div class="col-md-6">
+
+ 
+
+             <div class="form-group">
+
+ 
+
+                 <span class="form-label">To</span>
+
+ 
+
+                 <input class="form-control" type="text" placeholder="City or airport" [(ngModel)]="flight.to">
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+         <div class="col-md-12">
+
+ 
+
+             <button class="btn btn-primary" (click)="addFlight()">Add Flight</button>
+
+ 
+
+             <button class="btn btn-danger" (click)="removeFlight(i)">Remove</button>
+
+ 
+
+         </div>
+
+ 
+
+     </div>
+
+ 
+
+ </div> -->
+
+ 
+
+ 
+
+ 
+
+ <!-- ... (previous HTML code) ... -->
+
+ 
+
+ 
+
+ 
+
+ <!-- ... (previous HTML code) ... -->
+
+ 
+
+ 
+
+ 
+
+ <!-- <div *ngIf="selectedFlightType === 'multi-city'">
+
+ 
+
+   <div class="row" *ngFor="let flight of multiCityFlights; let i = index">
+
+ 
+
+     <div class="col-md-2">
+
+ 
+
+       <div class="form-group">
+
+ 
+
+         <span class="form-label">Date</span>
+
+ 
+
+         <input class="form-control" type="date" [(ngModel)]="flight.date">
+
+ 
+
+       </div>
+
+ 
+
+     </div>
+
+ 
+
+     <div class="col-md-4">
+
+ 
+
+       <div class="form-group">
+
+ 
+
+         <span class="form-label">From</span>
+
+ 
+
+         <input class="form-control" type="text" placeholder="City or airport" [(ngModel)]="flight.from">
+
+ 
+
+       </div>
+
+ 
+
+     </div>
+
+ 
+
+     <div class="col-md-4">
+
+ 
+
+       <div class="form-group">
+
+ 
+
+         <span class="form-label">To</span>
+
+ 
+
+         <input class="form-control" type="text" placeholder="City or airport" [(ngModel)]="flight.to">
+
+ 
+
+       </div>
+
+ 
+
+     </div>
+
+ 
+
+     <div class="col-md-2">
+
+ 
+
+       <div class="form-group">
+
+ 
+
+         <button class="btn btn-danger" (click)="removeFlight(i)">Remove</button>
+
+ 
+
+       </div>
+
+ 
+
+     </div>
+
+ 
+
+     <div class="col-md-12" *ngIf="i === multiCityFlights.length - 1">
+
+ 
+
+       <button class="btn btn-primary" (click)="addFlight()">Add Flight</button>
+
+ 
+
+     </div>
+
+ 
+
+   </div>
+
+ 
+
+ </div> -->
+
+ 
+
+ 
+
+ 
+ <div class="col-md-4">
+
+    <div class="form-group">
+
+        <span class="form-label">Departing</span>
+
+        <input class="form-control" name="date" type="date" [(ngModel)]="criteria.date" [min]="getToday()">
+
+    </div>
+
+</div>
+
+ 
+
+ 
+
+<div class="col-md-4" *ngIf="selectedFlightType === 'roundtrip'">
+
+    <div class="form-group">
+
+        <span class="form-label">Returning</span>
+
+        <input class="form-control" type="date" name="date" id="returningDate" [(ngModel)]="criteria.returningDate" [min]="getToday()">
+
+    </div>
+
+</div>
+
+ 
+
+     <div class="col-md-4">
+
+ 
+
+        <div class="form-group">
+
+ 
+
+            <span class="form-label" name="travelClass" [(ngModel)]="criteria.travelClass" >Travel class</span>
+
+ 
+
+            <select class="form-control">
+
+ 
+
+                <option>Economy</option>
+
+ 
+
+                <option>Business</option>
+
+ 
+
+                <option>First</option>
+
+ 
+
+            </select>
+
+ 
+
+            <span class="select-arrow"></span>
+
+ 
+
+        </div>
+
+ 
+
+    </div>
+
+ 
+
+ </div>
+
+ 
+
+ 
+
+ 
+
+ <!-- <div *ngIf="selectedFlightType === 'multi-city'">
+
+ 
+
+     <div class="row" *ngFor="let flight of multiCityFlights; let i = index">
+
+ 
+
+       <div class="col-md-2">
+
+ 
+
+         <div class="form-group">
+
+ 
+
+           <span class="form-label">Date</span>
+
+ 
+
+           <input class="form-control" type="date" [(ngModel)]="flight.date"><br>
+
+ 
+
+         </div>
+
+ 
+
+       </div>
+
+ 
+
+       
+
+ 
+
+       <div class="col-md-5">
+
+ 
+
+         <div class="form-group">
+
+ 
+
+           <span class="form-label">From</span>
+
+ 
+
+           <input class="form-control" type="text" placeholder="City or airport" [(ngModel)]="flight.from">
+
+ 
+
+         </div>
+
+ 
+
+       </div>
+
+ 
+
+       <div class="col-md-5">
+
+ 
+
+         <div class="form-group">
+
+ 
+
+           <span class="form-label">To</span>
+
+ 
+
+           <input class="form-control" type="text" placeholder="City or airport" [(ngModel)]="flight.to">
+
+ 
+
+         </div>
+
+ 
+
+       </div>
+
+ 
+
+       <div class="col-md-2">
+
+ 
+
+         <div class="form-group">
+
+ 
+
+           <button class="btn btn-danger" (click)="removeFlight(i)">Remove</button>
+
+ 
+
+         </div>
+
+ 
+
+       </div>
+
+ 
+
+       <div class="col-md-12" *ngIf="i === multiCityFlights.length - 1">
+
+ 
+
+         <button class="btn btn-primary" (click)="addFlight()">Add Flight</button>
+
+ 
+
+       </div>
+
+ 
+
+     </div>
+
+ 
+
+   </div> -->
+
+ 
+
+   <div *ngIf="selectedFlightType === 'multi-city'">
+
+ 
+
+     <div class="row" *ngFor="let flight of multiCityFlights; let i = index">
+
+ 
+
+         
+
+ 
+
+         <div class="col-md-4">
+
+ 
+
+             <div class="form-group">
+
+ 
+
+                 <span class="form-label">Flying From</span>
+
+ 
+
+                 <input class="form-control" type="text" placeholder="City or airport" >
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+         <div class="col-md-4">
+
+ 
+
+             <div class="form-group">
+
+ 
+
+                 <span class="form-label">Flying To</span>
+
+ 
+
+                 <input class="form-control" type="text" placeholder="City or airport" >
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+         
+
+ 
+
+         <div class="col-md-2">
+
+ 
+
+             <div class="form-group">
+
+ 
+
+                 <span class="form-label">Departing</span>
+
+ 
+
+                 <input class="form-control" type="date" >
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+         <div class="col-md-2">
+
+ 
+
+             <div class="form-group">
+
+ 
+
+                 <button class="btn btn-danger rounded-circle" (click)="removeFlight(i)">X</button>
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+     
+
+ 
+
+     
+
+ 
+
+         <div class="col-md-12" *ngIf="i === multiCityFlights.length - 1">
+
+ 
+
+             <button class="btn btn-primary" (click)="addFlight()">Add Flight</button>
+
+ 
+
+         </div>
+
+ 
+
+     </div>
+
+ 
+
+ </div>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <!-- ... (rest of the HTML code) ... -->
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <!-- ... (rest of the HTML code) ... -->
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+                         <!-- <div class="row">
+
+ 
+
+                             <div class="col-md-3">
+
+ 
+
+                                 <div class="form-group">
+
+ 
+
+                                     <span class="form-label">Departing</span>
+
+ 
+
+                                     <input class="form-control" type="date" required>
+
+ 
+
+                                 </div>
+
+ 
+
+                             </div>
+
+ 
+
+                             <div class="col-md-3">
+
+ 
+
+                                 <div class="form-group">
+
+ 
+
+                                     <span class="form-label">Returning</span>
+
+ 
+
+                                   
+
+ 
+
+                                     <input class="form-control" type="date" required [disabled]="selectedFlightType !== 'roundtrip'">
+
+ 
+
+                                     
+
+ 
+
+                                 </div>
+
+ 
+
+                             </div>
+
+ 
+
+                         </div> -->
+
+ 
+
+                         
+
+ 
+
+                             
+
+ 
+
+                             
+
+ 
+
+                         <div class="col-md-12 text-center">
+
+                            <div class="form-btn">
+
+                                <button type="submit" class="btn btn-primary short-btn" (click)="showFlights()">Search</button>
+
+                            </div>
+
+                        </div>
+
+                       
+
+                     </form>
+
+ 
+
+                 </div>
+
+ 
+
+             </div>
+
+ 
+
+         </div>
+
+ 
+
+     </div>
+
+     <div id="wrapper">
+
+        <footer>
+    
+            <div class="container">
+    
+                <div class="row">
+    
+                    <div class="col-md-12 text-center">
+    
+                        <p>&copy; 2023 Your Airline. All rights reserved.</p>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </footer>
+    
+    </div>
+
+ </div>
